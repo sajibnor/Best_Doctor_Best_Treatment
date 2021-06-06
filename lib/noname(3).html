@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h2>Create Json</h2>
+    <form action="/g" method="POST" id="id">
+      <label>name</label>
+      <input name="name" type="text">
+      <label>Degree</label>
+      <input name="Degree" type="text">
+      <label>address</label>
+      <input name="Address" type="text">
+      <label>Email</label>
+      <input name="Email" type="email">
+     
+      <label>phone</label>
+      <input name="phone" type="text">
+      
+      <button type="submit" value="submit" onclick="fo('id')">Submit</button>
+      <a href="">Reset</a>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      function fo(ID) { 
+        $("#" + ID).on('submit', function (e) {
+          var form = $("#" + ID);
+          var data = $("#" + ID).serializeArray().reduce(function(obj, item) {
+          obj[item.name] = item.value;
+          return obj;
+          }, {});
+          e.preventDefault();
+          var d=JSON.stringify(data, null, '');
+          console.log( d);  
+        })
+      }
+    </script>
+  </body>
+</html>

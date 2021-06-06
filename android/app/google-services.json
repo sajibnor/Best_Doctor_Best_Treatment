@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1088453058080",
+    "project_id": "flutter-best-doctor",
+    "storage_bucket": "flutter-best-doctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088453058080:android:a344478ed1763486f3e645",
+        "android_client_info": {
+          "package_name": "com.example.Best_doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088453058080-lhbl3rnsj6mdsgbso3mko0fad6stfmcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5hNseJkmKWVRBs0SG5thkKxLzlTak64k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088453058080-lhbl3rnsj6mdsgbso3mko0fad6stfmcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
