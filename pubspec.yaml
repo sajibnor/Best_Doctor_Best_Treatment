@@ -56,8 +56,15 @@ flutter:
     - images/back.jpg
     - images/back2.jpg
     - images/sajib.jpg
+    - images/logo.png
+    - images/logo2.png
     - lib/data.json
     - lalldata/
+    - lalldata/care/
+    - lalldata/enam/
+    - lalldata/seba/
+    - lalldata/savarprime/
+    - lalldata/allspecialized/
     # - lalldata/ibn_medicine.json
 
   # An image asset can refer to one or more resolution-specific "variants", see

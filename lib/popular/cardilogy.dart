@@ -15,7 +15,7 @@ class _CardiologyDptState extends State<CardiologyDpt> {
 
   Future loadjsondata() async {
     var response =
-        await rootBundle.loadString("lalldata/popularCardiology.json");
+        await rootBundle.loadString("lalldata/popular/popularCardiology.json");
     setState(() {
       data = json.decode(response);
       print(data);

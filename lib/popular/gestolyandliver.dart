@@ -14,7 +14,8 @@ class _GestoLiverDptState extends State<GestoLiverDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularLiver.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularGesto.json");
     setState(() {
       data = json.decode(response);
       print(data);

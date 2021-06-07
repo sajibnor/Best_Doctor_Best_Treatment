@@ -1,10 +1,10 @@
 // import 'dart:collection';
 
 import 'package:flutter/material.dart';
-
 import 'hospital.dart';
-import 'listbuilder.dart';
+
 import './dipokhospital.dart';
+import './specialized/medicine.dart';
 // import './ibnsina.dart';
 
 class DepartmeName extends StatelessWidget {
@@ -123,7 +123,7 @@ class GlobalDept extends StatelessWidget {
             onTap: () {
               if (i == 0) {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => ListerBuilderr()));
+                    .push(MaterialPageRoute(builder: (_) => Medicine()));
               } else if (i == 1) {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (_) => Hospital()));

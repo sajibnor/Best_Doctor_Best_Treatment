@@ -18,7 +18,10 @@ class _AddDoctorState extends State<AddDoctor> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("New Doctor"),
+        title: Text("New Doctor List"),
+        bottomOpacity: .6,
+        backgroundColor: Colors.white10.withOpacity(0.4),
+        centerTitle: true,
       ),
       body: StreamBuilder(
         stream:

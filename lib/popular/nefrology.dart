@@ -15,7 +15,7 @@ class _NefrologyDptState extends State<NefrologyDpt> {
 
   Future loadjsondata() async {
     var response =
-        await rootBundle.loadString("lalldata/popularNeprology.json");
+        await rootBundle.loadString("lalldata/popular/PopularNeprology.json");
     setState(() {
       data = json.decode(response);
       print(data);

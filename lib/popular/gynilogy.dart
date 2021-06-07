@@ -14,7 +14,8 @@ class _GynologyDptState extends State<GynologyDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularGyni.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularGyni.json");
     setState(() {
       data = json.decode(response);
       print(data);

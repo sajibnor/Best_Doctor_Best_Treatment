@@ -14,7 +14,8 @@ class _EntDptState extends State<EntDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularEnt.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularEnt.json");
     setState(() {
       data = json.decode(response);
       print(data);

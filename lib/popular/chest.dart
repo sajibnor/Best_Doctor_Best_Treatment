@@ -14,7 +14,8 @@ class _ChestDptState extends State<ChestDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularCest.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularCest.json");
     setState(() {
       data = json.decode(response);
       print(data);

@@ -97,7 +97,7 @@ class Popular extends StatelessWidget {
           // ),
           Expanded(
               child: ListView.builder(
-                  itemCount: 13,
+                  itemCount: 14,
                   itemBuilder: (BuildContext context, int i) =>
                       ChildrenItem(i))),
         ]));

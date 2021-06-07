@@ -14,7 +14,8 @@ class _ChildDptState extends State<ChildDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularChild.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularChild.json");
     setState(() {
       data = json.decode(response);
       print(data);

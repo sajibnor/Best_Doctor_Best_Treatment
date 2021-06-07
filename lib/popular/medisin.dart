@@ -14,7 +14,8 @@ class _MedicineDptState extends State<MedicineDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularMedicine.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularMedicin.json");
     setState(() {
       data = json.decode(response);
       print(data);

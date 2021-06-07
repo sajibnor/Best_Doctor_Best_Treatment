@@ -14,7 +14,8 @@ class _SergaryDptState extends State<SergaryDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularSergery.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularSergery.json");
     setState(() {
       data = json.decode(response);
       print(data);

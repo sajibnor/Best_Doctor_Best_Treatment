@@ -14,7 +14,8 @@ class _OrthoDptState extends State<OrthoDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularOrth.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularOrth.json");
     setState(() {
       data = json.decode(response);
       print(data);

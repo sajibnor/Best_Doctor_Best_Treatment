@@ -79,19 +79,22 @@ class _PickImageDemoState extends State<PickImageDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[500],
+      backgroundColor: Colors.white60,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Select your Profile picture"),
+            Text(
+              "Select your Profile picture",
+              style: TextStyle(color: Colors.white),
+            ),
             IconButton(
               icon: Icon(
                 Icons.camera,
                 size: 50,
                 color: Colors.green,
               ),
-              tooltip: 'image',
+              tooltip: 'Image',
               onPressed: () {
                 pickImageFromGallery(ImageSource.gallery);
               },
@@ -104,9 +107,11 @@ class _PickImageDemoState extends State<PickImageDemo> {
               },
               // controller: username,
               decoration: InputDecoration(
-                  labelText: "Name",
-                  hintStyle: TextStyle(color: Color(0xfffbbb2f)),
-                  hintText: "Enter Your name...."),
+                labelText: "Name",
+                focusColor: Colors.white,
+                hintStyle: TextStyle(color: Colors.white),
+                hintText: "Enter Your name....",
+              ),
             ),
             Divider(
               height: 2,
@@ -121,13 +126,15 @@ class _PickImageDemoState extends State<PickImageDemo> {
               // },
               // controller: useremail,
               decoration: InputDecoration(
-                  labelText: "Name",
+                  labelText: "Email",
                   hintStyle: TextStyle(color: Color(0xfffbbb2f)),
-                  hintText: "Enter Your name...."),
+                  hintText: "Enter Your Email...."),
             ),
-            RaisedButton(onPressed: () {
-              save();
-            })
+            RaisedButton(
+                child: Text("Save"),
+                onPressed: () {
+                  save();
+                })
           ],
         ),
       ),

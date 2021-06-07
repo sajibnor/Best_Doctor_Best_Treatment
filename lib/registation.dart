@@ -1,12 +1,13 @@
 // import 'package:Best_doctor/main.dart';
 // import 'package:Best_doctor/secondpage.dart';
-import 'package:Best_doctor/try.dart';
+// import 'package:Best_doctor/try.dart';
 // import 'package:Best_doctor/secondpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'loginPage.dart';
+import 'main.dart';
 
 // import 'dart:io';
 

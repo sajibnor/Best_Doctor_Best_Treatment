@@ -14,7 +14,8 @@ class _SexDptState extends State<SexDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularSex.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/populaSex.json");
     setState(() {
       data = json.decode(response);
       print(data);
@@ -32,7 +33,7 @@ class _SexDptState extends State<SexDpt> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'Medicine (মেডিসিন)',
+            'চর্ম ও যৌন বিশেষজ্ঞ',
             style: TextStyle(
                 // fontWeight: FontWeight.bold,
                 color: Colors.black,

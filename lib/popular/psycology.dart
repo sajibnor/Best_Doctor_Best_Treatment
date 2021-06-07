@@ -15,7 +15,7 @@ class _PsycologyDptState extends State<PsycologyDpt> {
 
   Future loadjsondata() async {
     var response =
-        await rootBundle.loadString("lalldata/popularPhycology.json");
+        await rootBundle.loadString("lalldata/popular/popularPhycology.json");
     setState(() {
       data = json.decode(response);
       print(data);

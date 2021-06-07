@@ -14,7 +14,8 @@ class _UrologyDptState extends State<UrologyDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/popularUrology.json");
+    var response =
+        await rootBundle.loadString("lalldata/popular/popularUrology.json");
     setState(() {
       data = json.decode(response);
       print(data);

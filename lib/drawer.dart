@@ -88,7 +88,7 @@ class _DrawerrState extends State<Drawerr> {
           ),
           currentAccountPicture: InkWell(
             child: CircleAvatar(
-              backgroundImage: AssetImage("images/sajib.jpg"),
+              backgroundImage: AssetImage("images/logo2.png"),
               // child: CircleAvatar(
               //     child: Image(image: AssetImage("images/back.jpg")))
             ),
@@ -160,7 +160,7 @@ class _DrawerrState extends State<Drawerr> {
         InkWell(
           child: ListTile(
             leading: Icon(
-              FontAwesomeIcons.addressBook,
+              FontAwesomeIcons.fileMedical,
               color: Colors.brown[400],
               size: 30,
             ),
@@ -174,7 +174,7 @@ class _DrawerrState extends State<Drawerr> {
         InkWell(
           child: ListTile(
             leading: Icon(
-              FontAwesomeIcons.ubuntu,
+              FontAwesomeIcons.addressBook,
               color: Colors.brown[400],
               size: 30,
             ),

@@ -14,8 +14,8 @@ class _NeurologyDptState extends State<NeurologyDpt> {
   var data;
 
   Future loadjsondata() async {
-    var response =
-        await rootBundle.loadString("lalldata/popular_neuro&sergon.json");
+    var response = await rootBundle
+        .loadString("lalldata/popular/popular_neuro&sergon.json");
     setState(() {
       data = json.decode(response);
       print(data);
