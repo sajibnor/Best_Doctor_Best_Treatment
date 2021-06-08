@@ -23,7 +23,7 @@ import './ambulance.dart';
 // import './picup.dart';
 import 'newDcForm.dart';
 import 'newDcShow.dart';
-import 'picup.dart';
+import 'setprofile.dart';
 // import 'newDcForm.dart';
 // import './picUpImage.dart';
 
