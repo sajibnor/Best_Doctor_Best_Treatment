@@ -4,6 +4,8 @@ import 'dart:core';
 // import 'dart:io';
 import 'dart:ui';
 // import 'package:firstapp/views/note.dart';
+import 'package:Best_doctor/loginPage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
@@ -37,7 +39,10 @@ class Drawerr extends StatefulWidget {
 }
 
 class _DrawerrState extends State<Drawerr> {
-//
+  Future signOut() async {
+    await FirebaseAuth.instance.signOut();
+    return new LogInpage();
+  }
 
 //
   static const String youserName = "youserName";
@@ -72,7 +77,7 @@ class _DrawerrState extends State<Drawerr> {
         UserAccountsDrawerHeader(
           accountName: InkWell(
             child: Text(
-              youserNam,
+              youserNam ?? "Admin",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
@@ -84,7 +89,7 @@ class _DrawerrState extends State<Drawerr> {
             splashColor: Colors.blue,
           ),
           accountEmail: Text(
-            youserEmai,
+            youserEmai ?? "admin@email.com",
           ),
           currentAccountPicture: InkWell(
             child: CircleAvatar(
@@ -192,11 +197,11 @@ class _DrawerrState extends State<Drawerr> {
               color: Colors.brown[400],
               size: 30,
             ),
-            title: Text('About us'),
+            title: Text('Log out'),
           ),
           onTap: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => AddDoctor()));
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => LogInpage()));
           },
         )
       ],

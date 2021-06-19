@@ -5,9 +5,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
-import 'loginPage.dart';
-import 'main.dart';
+import './main.dart';
 
 // import 'dart:io';
 
@@ -177,15 +175,14 @@ class _RegistrationState extends State<Registration> {
                                     ],
                                   ),
                                   InkWell(
-                                      child: Text(
-                                        "Do have Registration?",
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      onTap: () => Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (_) => LogInpage()))),
+                                    child: Text(
+                                      "Do have Registration?",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    onTap: () => Navigator.pop(context),
+                                  )
                                 ],
                               ),
                             ),

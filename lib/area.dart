@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
-import 'savar.dart';
+
+import './ahsaniaHospital/ahsaniaHospital.dart';
+import './carehospital/careHospital.dart';
+import './crawnhospital/crawnhospital.dart';
+import './dipclinic/diphospital.dart';
+import './eam/enamhospital.dart';
+import './seba/sebahospital.dart';
+import './ibnsina/ibnsina.dart';
+import './popular/popular.dart';
+import './primehospital/primehospital.dart';
+import './specilized_hospital/specilizedhospital.dart';
+import './dataNotYet.dart';
 
 // import 'aria_name.dart';
 
@@ -22,7 +33,7 @@ class AreListname extends StatelessWidget {
     'Uttara',
     'Rampura ',
   ];
-  final int i = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,19 +57,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 2)),
-              ChildrenItem(0),
-              ChildrenItem(1),
-              ChildrenItem(2),
-              ChildrenItem(3),
-              ChildrenItem(4),
-              ChildrenItem(5),
-              ChildrenItem(6),
-              ChildrenItem(7),
-              ChildrenItem(8),
-              ChildrenItem(9),
-              ChildrenItem(10),
-              ChildrenItem(11),
-              ChildrenItem(12),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -68,8 +67,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -79,8 +77,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -90,18 +87,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -111,8 +97,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -122,8 +107,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -133,8 +117,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -144,8 +127,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -155,8 +137,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -166,8 +147,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -177,8 +157,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -188,8 +167,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -221,6 +199,7 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
+              ErrorMassage()
             ],
           ),
           ExpansionTile(
@@ -230,11 +209,32 @@ class AreListname extends StatelessWidget {
             ),
             children: [
               Padding(padding: EdgeInsets.only(top: 0)),
-              ChildrenItem(4),
-              ChildrenItem(4),
+              ChildrenItem(13)
             ],
           ),
         ]))));
+  }
+}
+
+class ErrorMassage extends StatelessWidget {
+  const ErrorMassage({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            "No data yet!!",
+            style:
+                TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey),
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -252,7 +252,46 @@ class ChildrenItem extends StatelessWidget {
               onTap: () {
                 if (index == 0) {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => AreName()));
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 1) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => DipClinic()));
+                } else if (index == 2) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => EnamHospital()));
+                } else if (index == 3) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => Ibnsina()));
+                } else if (index == 4) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 5) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => Popular()));
+                } else if (index == 6) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => CareHospital()));
+                } else if (index == 7) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 8) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => PrimeHospital()));
+                } else if (index == 9) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => CrownHospital()));
+                } else if (index == 10) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 11) {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => SavarSpecilized()));
+                } else if (index == 12) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => SebaHospital()));
+                } else if (index == 13) {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => Ahsaniahopital()));
                 }
               },
               child: Center(
@@ -279,7 +318,10 @@ List hospitalName = [
   "Super Medical Hospital",
   "Savar Specialized Hospital.",
   "Seba Clinic & Diagnostic Centre",
+  "Ahsania Mission Cancer & General Hospital",
 ];
+
+// creator sajib mridha
 // List data;
 // Future loadJsonData() async {
 //   var jsonText = await rootBundle.loadString('lab/data.json');

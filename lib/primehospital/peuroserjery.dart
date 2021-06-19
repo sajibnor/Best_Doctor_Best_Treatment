@@ -14,8 +14,8 @@ class _PneuroserjaryState extends State<Pneuroserjary> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle
-        .loadString("lalldata/savarprime/primepneuroserjary.json");
+    var response =
+        await rootBundle.loadString("lalldata/savarprime/pneuroserjary.json");
     setState(() {
       data = json.decode(response);
       print(data);
@@ -33,7 +33,7 @@ class _PneuroserjaryState extends State<Pneuroserjary> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            "Neuro-Surgery (নিউরো সার্জারি)",
+            "Neurology (ব্রেইন ও স্নায়ু)",
             style: TextStyle(
                 // fontWeight: FontWeight.bold,
                 color: Colors.black,

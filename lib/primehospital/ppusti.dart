@@ -14,7 +14,8 @@ class _PpustState extends State<Ppust> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/savarprime/ppust.json");
+    var response =
+        await rootBundle.loadString("lalldata/savarprime/ppusti.json");
     setState(() {
       data = json.decode(response);
       print(data);

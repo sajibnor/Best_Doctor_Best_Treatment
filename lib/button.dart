@@ -1,7 +1,6 @@
 import 'package:Best_doctor/blood.dart';
 import 'package:Best_doctor/hospital.dart';
-import 'package:Best_doctor/setprofile.dart';
-import 'package:Best_doctor/savar.dart';
+
 // import 'package:Best_doctor/savar.dart';
 // import 'package:Best_doctor/try.dart';
 import 'package:flutter/material.dart';

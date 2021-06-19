@@ -14,7 +14,8 @@ class _NeuroState extends State<Neuro> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/ibnNeuro.json");
+    var response =
+        await rootBundle.loadString("lalldata/ibnsina/ibnNeuro.json");
     setState(() {
       data = json.decode(response);
       print(data);
@@ -32,7 +33,7 @@ class _NeuroState extends State<Neuro> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'Medicine (মেডিসিন)',
+            "Neuro-Medicine (নিউরো মেডিসিন বিশেষজ্ঞ)",
             style: TextStyle(
                 // fontWeight: FontWeight.bold,
                 color: Colors.black,
@@ -178,56 +179,3 @@ class Doctor extends StatelessWidget {
     );
   }
 }
-
-// var drName, drDegre, drdetails, drNumber;
-// _listbulder(index) {
-//   Container(
-//     child: Card(
-//       // margin: EdgeInsets.all(10),
-
-//       shadowColor: Colors.orange,
-//       elevation: 7,
-//       color: Colors.black,
-//       child: Column(
-//         children: [
-//           Padding(
-//             padding: EdgeInsets.all(8),
-//           ),
-//           Text(
-//             data[index],
-//             style: TextStyle(
-//                 color: Colors.white,
-//                 fontSize: MediaQuery.of(context).size.height * 0.03,
-//                 fontFamily: "Balooda"),
-//             textAlign: TextAlign.end,
-//           ),
-//           Padding(
-//             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
-//             child: Text(drDegre,
-//                 style: TextStyle(color: Colors.white, fontFamily: "Balooda"),
-//                 textAlign: TextAlign.end),
-//           ),
-//           Padding(
-//             padding: const EdgeInsets.all(8.0),
-//             child: Text(
-//               drdetails,
-//               style: TextStyle(color: Colors.white, fontFamily: "Balooda"),
-//             ),
-//           ),
-//           Padding(
-//             padding: const EdgeInsets.all(8.0),
-//             child: InkWell(
-//                 child: Text('For Appointment:' + drNumber,
-//                     style: TextStyle(
-//                         color: Colors.white, fontFamily: "Balooda")),
-//                 onTap: () => customLaunch('tel:$drNumber')),
-//           ),
-//           SizedBox(
-//             width: 5,
-//             height: 10,
-//           ),
-//         ],
-//       ),
-//     ),
-//   );
-// }

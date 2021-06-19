@@ -5,16 +5,17 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:Best_doctor/main.dart';
 
-class MedicineDpt extends StatefulWidget {
+class Medicine extends StatefulWidget {
   @override
-  _MedicineDptState createState() => _MedicineDptState();
+  _MedicineState createState() => _MedicineState();
 }
 
-class _MedicineDptState extends State<MedicineDpt> {
+class _MedicineState extends State<Medicine> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/ibn_medicine.json");
+    var response =
+        await rootBundle.loadString("lalldata/ibnsina/ibn_medicine.json");
     setState(() {
       data = json.decode(response);
       print(data);
@@ -32,7 +33,7 @@ class _MedicineDptState extends State<MedicineDpt> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'Medicine (মেডিসিন)',
+            "Medicine (মেডিসিন)",
             style: TextStyle(
                 // fontWeight: FontWeight.bold,
                 color: Colors.black,
@@ -112,9 +113,9 @@ class Doctor extends StatelessWidget {
                 drName,
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: MediaQuery.of(context).size.height * 0.03,
+                    fontSize: MediaQuery.of(context).size.height * 0.028,
                     fontFamily: "Balooda"),
-                textAlign: TextAlign.end,
+                textAlign: TextAlign.center,
               ),
               Padding(
                 padding:

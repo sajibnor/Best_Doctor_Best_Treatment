@@ -1,11 +1,32 @@
 // import 'dart:collection';
 
+import './specialized/oncology.dart';
 import 'package:flutter/material.dart';
-import 'hospital.dart';
 
-import './dipokhospital.dart';
 import './specialized/medicine.dart';
-// import './ibnsina.dart';
+import './specialized/cardiology.dart';
+import './specialized/chest.dart';
+import './specialized/child.dart';
+import './specialized/ent.dart';
+import './specialized/eye.dart';
+import './specialized/gynecologist.dart';
+import './specialized/maxillofacial.dart';
+import './specialized/neoruserjun.dart';
+import './specialized/nutritionist.dart';
+import './specialized/orthopedic.dart';
+import './specialized/skin.dart';
+import './specialized/urology.dart';
+import './specialized/nephrology.dart';
+import './specialized/gastroenterology.dart';
+import './specialized/neuroMedicine.dart';
+import './specialized/psychiatrist.dart';
+import './specialized/radiology.dart';
+import './specialized/surgery.dart';
+import './specialized/hepatology.dart';
+import './eam/ereumatology.dart';
+import './dataNotYet.dart';
+import './specialized/dibetics.dart';
+import './ahsaniaHospital/hematology.dart';
 
 class DepartmeName extends StatelessWidget {
   @override
@@ -71,9 +92,9 @@ class ChildrenItem extends StatelessWidget {
 class GlobalDept extends StatelessWidget {
   final List dept = [
     "Medicine (মেডিসিন)",
-    "General (জেনারেল)",
+    // "General (জেনারেল)",
     "General surgery (জেনারেল সার্জারি)",
-    "Neurology (ব্রেইন ও স্নায়ু)",
+    // "Neurology (ব্রেইন ও স্নায়ু)",
     "Neuro-Medicine Specialist (নিউরো মেডিসিন বিশেষজ্ঞ",
     "Neuro-Surgery (নিউরো সার্জারি)",
     "Cardiology (হূদরোগ)",
@@ -83,7 +104,7 @@ class GlobalDept extends StatelessWidget {
     "Oncology (ক্যান্সার)",
     "Gynecologist (গাইনী, প্রসূতি ও বন্ধ্যত্ব রোগ বিশেষজ্ঞ)",
     "Child care specialist (শিশু বিশেষজ্ঞ)",
-    "Pediatric (নবজাতক)",
+    // "Pediatric (নবজাতক)",
     "Dental Specialist (দাঁত)",
     "Pulmonology (ফুসফুস)",
     "Nephrology (কিডনি)",
@@ -94,18 +115,17 @@ class GlobalDept extends StatelessWidget {
     "Hepatology (লিভার ও গলব্লাডার)",
     "Rheumatic Fever (বাত জ্বর)",
     "Hypertension (উচ্চ রক্ত-চাপ)",
-    "Colorectal Surgery (মলাশয় সার্জারি) ",
+    "Colorectal Surgery (মলাশয় সার্জারি)",
     "Hematology (রক্তরোগ)",
     "Vascular Surgery (রক্তনালী সার্জারি)",
-    "Endocrinologist (হরমোন  বিশেষজ্ঞ)",
-    "Thyroid (থাইরয়েড বিশেষজ্ঞ)",
-    "Rheumatic Fever (বাত জ্বর) ",
+    "Diabetic,Thyroid & Endocrinologist (ডায়াবেটিস,থাইরয়েড & হরমোন  বিশেষজ্ঞ)",
+
+    // "Rheumatic Fever (বাত জ্বর) ",
     "Laparoscopic (ল্যাপারোস্কপিক)",
     "Maxillofacial Surgery (ম্যাক্সিলোফেসিয়াল সার্জারি)",
-    "Diabetic (ডায়াবেটিস)",
-    "Gastroenterology (পরিপাকতন্ত্র)",
+    // "Gastroenterology (পরিপাকতন্ত্র)",
     "Radiology and Imaging Specialist (রেডিওলজি এন্ড ইমেজিং বিশেষজ্ঞ)",
-    "ENT- Eye, Ear and Throat specialist (নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
+    "ENT- specialist (নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
     "Physiotherapy (ফিজিওথেরাপি)",
     "Psychiatrist (মানসিক রোগ বিশেষজ্ঞ)",
     "Nutritionist (পুষ্টিবিদ)",
@@ -126,10 +146,100 @@ class GlobalDept extends StatelessWidget {
                     .push(MaterialPageRoute(builder: (_) => Medicine()));
               } else if (i == 1) {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => Hospital()));
+                    .push(MaterialPageRoute(builder: (_) => Surgery()));
+              } else if (i == 2) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => NeuroMedicine()));
               } else if (i == 3) {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => DipokHospital()));
+                    .push(MaterialPageRoute(builder: (_) => Neoruserjun()));
+              } else if (i == 4) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Cardiology()));
+              } else if (i == 5) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Chest()));
+              } else if (i == 6) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Orthopedic()));
+              } else if (i == 7) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Eye()));
+              } else if (i == 8) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Oncology()));
+              } else if (i == 9) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Gynecologist()));
+              } else if (i == 10) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Child()));
+              } else if (i == 11) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Maxillofacial()));
+              } else if (i == 12) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+              } else if (i == 13) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Nephrology()));
+              } else if (i == 14) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Urology()));
+              } else if (i == 15) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Skin()));
+              } else if (i == 16) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+              } else if (i == 17) {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => Gastroenterology()));
+              } else if (i == 18) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Hepatology()));
+              } else if (i == 19) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Enamreumatology()));
+              } else if (i == 20) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+              } else if (i == 21) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+              } else if (i == 22) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Hematology()));
+              } else if (i == 23) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+              } else if (i == 24) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Dibetics()));
+              } else if (i == 25) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+              } else if (i == 26) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Maxillofacial()));
+              } else if (i == 27) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Radiology()));
+              } else if (i == 28) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => ENT()));
+              } else if (i == 29) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+              } else if (i == 30) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Psychiatrist()));
+              } else if (i == 31) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Nutritionist()));
+              } else if (i == 32) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => MassegeShow()));
               }
             },
           ),

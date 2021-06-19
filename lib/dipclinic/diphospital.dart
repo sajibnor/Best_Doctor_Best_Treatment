@@ -1,5 +1,5 @@
 // import 'package:Best_doctor/department.dart';GlobalDept()
-import 'package:Best_doctor/popular/gestolyandliver.dart';
+
 import 'package:flutter/material.dart';
 import './darthopedics.dart';
 
@@ -17,15 +17,18 @@ import './durology.dart';
 import './gastroliver.dart';
 // import './neuro.dart';
 
-class Popular extends StatelessWidget {
+class DipClinic extends StatelessWidget {
   // var children1 = ChildrenItem();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            " Popular Diagnostic Centre Ltd.",
-            style: TextStyle(color: Colors.black),
+            "দীপ ক্লিনিক এন্ড ডায়াগনস্টিক সেন্টার",
+            style: TextStyle(
+              color: Colors.black,
+              fontFamily: "Balooda",
+            ),
           ),
           centerTitle: true,
           backgroundColor: Colors.white24,
@@ -48,19 +51,19 @@ class Popular extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("পপুলার ডায়াগনস্টিক সেন্টার লিঃ,সাভার।",
+                    Text("দীপ ক্লিনিক এন্ড ডায়াগনস্টিক সেন্টার",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
                             fontFamily: "Balooda",
                             fontWeight: FontWeight.bold)),
-                    Text("ঠিকানা : ই/২২ তালবাগ আনন্দপুর সাভার ঢাকা ",
+                    Text("ঠিকানা:১/২ পার্বতী নগর, থানা রোড, সাভার, ঢাকা-১৩৪০।",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
                             fontFamily: "Balooda",
                             fontWeight: FontWeight.bold)),
-                    Text("Contact: +8801844141715, +8801784188708",
+                    Text("Contact: 01743934070, 01726445903",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
@@ -98,7 +101,7 @@ class Popular extends StatelessWidget {
           // ),
           Expanded(
               child: ListView.builder(
-                  itemCount: 13,
+                  itemCount: 10,
                   itemBuilder: (BuildContext context, int i) =>
                       ChildrenItem(i))),
         ]));
@@ -113,7 +116,7 @@ class ChildrenItem extends StatelessWidget {
     "Medicine (মেডিসিন)",
     // "Neuro-Medicine Specialist (নিউরো মেডিসিন বিশেষজ্ঞ)",
     "Cardiology (হূদরোগ)",
-    "ENT- Eye, Ear and Throat specialist(নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
+    "ENT-specialist(নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
     "Gynecologist (গাইনী, প্রসূতি ও বন্ধ্যত্ব রোগ বিশেষজ্ঞ)",
     // "Child care specialist (শিশু বিশেষজ্ঞ)",
     "Orthopedic (হাড় বিশেষজ্ঞ)",

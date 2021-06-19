@@ -1,30 +1,28 @@
-// import 'package:Best_doctor/department.dart';GlobalDept()
-import 'package:Best_doctor/popular/gestolyandliver.dart';
 import 'package:flutter/material.dart';
- import './spartho.dart';
- import './spcardiology.dart';
- import './spdybetic.dart';
- import './spgserjery.dart';
- import './spgynology.dart';
- import './spmedi.dart';
- import './spnakkan.dart';
- import './spneuromedi.dart';
- import './spneuroserjery.dart';
- import './sprediology.dart';
- import './spsisu.dart';
- import './spurology.dart';
- import './spvvd.dart';
+import './spartho.dart';
+import './spcardiology.dart';
+import './spdybetic.dart';
+import './spgserjery.dart';
+import './spgynology.dart';
+import './spmedi.dart';
+import './spnakkan.dart';
+import './spneuromedi.dart';
+import './spneuroserjery.dart';
+import './sprediology.dart';
+import './spsisu.dart';
+import './spurology.dart';
+import './spvvd.dart';
 // import './neuro.dart';
 
-class Popular extends StatelessWidget {
+class SavarSpecilized extends StatelessWidget {
   // var children1 = ChildrenItem();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            " Popular Diagnostic Centre Ltd.",
-            style: TextStyle(color: Colors.black),
+            "সাভার স্পেশালাইজড হাসপাতাল",
+            style: TextStyle(fontFamily: "Balooda", color: Colors.black),
           ),
           centerTitle: true,
           backgroundColor: Colors.white24,
@@ -47,19 +45,26 @@ class Popular extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("পপুলার ডায়াগনস্টিক সেন্টার লিঃ,সাভার।",
+                    Text("সাভার স্পেশালাইজড হাসপাতাল",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
                             fontFamily: "Balooda",
                             fontWeight: FontWeight.bold)),
-                    Text("ঠিকানা : ই/২২ তালবাগ আনন্দপুর সাভার ঢাকা ",
+                    Text(
+                        "ঠিকানা :মডার্ন প্লাজা (তৃতীয় তলা), ডি -১৩৬ তালবাগ, থানা বাসস্ট্যান্ড, সাভার ঢাকা ",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
                             fontFamily: "Balooda",
                             fontWeight: FontWeight.bold)),
-                    Text("Contact: +8801844141715, +8801784188708",
+                    Text("Contact: +88 01676-195918",
+                        style: TextStyle(
+                            fontSize:
+                                MediaQuery.of(context).size.height * 0.022,
+                            fontFamily: "Balooda",
+                            fontWeight: FontWeight.bold)),
+                    Text("Website:www.ssh.com.bd",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
@@ -112,7 +117,7 @@ class ChildrenItem extends StatelessWidget {
     "Medicine (মেডিসিন)",
     "Neuro-Medicine Specialist (নিউরো মেডিসিন বিশেষজ্ঞ)",
     "Cardiology (হূদরোগ)",
-    "ENT- Eye, Ear and Throat specialist(নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
+    "ENT (নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
     "Gynecologist (গাইনী, প্রসূতি ও বন্ধ্যত্ব রোগ বিশেষজ্ঞ)",
     "Child care specialist (শিশু বিশেষজ্ঞ)",
     "Orthopedic (হাড় বিশেষজ্ঞ)",
@@ -128,8 +133,8 @@ class ChildrenItem extends StatelessWidget {
 
     // "Psychiatrist (মানসিক রোগ বিশেষজ্ঞ)",
     "Diabetic (ডায়াবেটিস)",
-     "Neuro-Surgery (নিউরো সার্জারি)",
-     "Radiology and Imaging Specialist (রেডিওলজি এন্ড ইমেজিং বিশেষজ্ঞ)"
+    "Neuro-Surgery (নিউরো সার্জারি)",
+    "Radiology (রেডিওলজি এন্ড ইমেজিং বিশেষজ্ঞ)"
   ];
 
   @override
@@ -185,8 +190,8 @@ class ChildrenItem extends StatelessWidget {
                     .push(MaterialPageRoute(builder: (_) => Spneuroserjery()));
               } else if (i == 12) {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => sprediology()));
-              }  
+                    .push(MaterialPageRoute(builder: (_) => Sprediology()));
+              }
             },
           )),
     );

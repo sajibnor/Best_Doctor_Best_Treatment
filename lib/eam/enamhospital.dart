@@ -1,7 +1,7 @@
 // import 'package:Best_doctor/department.dart';GlobalDept()
 import 'package:Best_doctor/eam/enamOnco.dart';
 import 'package:Best_doctor/eam/enamWomen.dart';
-import 'package:Best_doctor/popular/gestolyandliver.dart';
+
 import 'package:flutter/material.dart';
 // import 'package:valid_form/popular/ortho.dart';
 import './eameye.dart';
@@ -34,7 +34,10 @@ class EnamHospital extends StatelessWidget {
         appBar: AppBar(
           title: Text(
             "এনাম মেডিকেল কলেজ অ্যান্ড হাসপাতাল",
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(
+              color: Colors.black,
+              fontFamily: "Balooda",
+            ),
           ),
           centerTitle: true,
           backgroundColor: Colors.white24,

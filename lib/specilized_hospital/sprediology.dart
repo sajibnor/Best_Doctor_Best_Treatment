@@ -5,16 +5,17 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:Best_doctor/main.dart';
 
-class sprediology extends StatefulWidget {
+class Sprediology extends StatefulWidget {
   @override
-  _sprediologyState createState() => _sprediologyState();
+  _SprediologyState createState() => _SprediologyState();
 }
 
-class _sprediologyState extends State<sprediology> {
+class _SprediologyState extends State<Sprediology> {
   var data;
 
   Future loadjsondata() async {
-    var response = await rootBundle.loadString("lalldata/specilized/sprediology.json");
+    var response =
+        await rootBundle.loadString("lalldata/specilized/sprediology.json");
     setState(() {
       data = json.decode(response);
       print(data);

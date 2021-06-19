@@ -32,7 +32,7 @@ class _DnakkanState extends State<Dnakkan> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            "ENT- Eye, Ear and Throat specialist (নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
+            "ENT (নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
             style: TextStyle(
                 // fontWeight: FontWeight.bold,
                 color: Colors.black,
@@ -58,9 +58,7 @@ class _DnakkanState extends State<Dnakkan> {
                       .push(MaterialPageRoute(builder: (_) => MyHomePage()));
                 }),
 
-            // IconButton(
-            //     icon: Icon(FontAwesomeIcons.houseDamage), onPressed: null),
-            // IconButton(icon: Icon(FontAwesomeIcons.camera), onPressed: null),
+          
           ],
         ),
         body: ListView.builder(

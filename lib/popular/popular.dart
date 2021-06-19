@@ -23,7 +23,7 @@ class Popular extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            " Popular Diagnostic Centre Ltd.",
+            "পপুলার ডায়াগনস্টিক সেন্টার লিঃ",
             style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,

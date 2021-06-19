@@ -1,9 +1,7 @@
 // import 'package:Best_doctor/department.dart';GlobalDept()
 import 'package:Best_doctor/seba/sarthopedis.dart';
 import 'package:flutter/material.dart';
-import 'package:Best_doctor/popular/gestolyandliver.dart';
-// import 'package:valid_form/specilized_hospital/spnakkan.dart';
-// import '.lib/seba/sarthopedis.dart';
+
 import './scardiology.dart';
 import './seuroserjery.dart';
 import './sgynoclogy.dart';
@@ -115,17 +113,6 @@ class ChildrenItem extends StatelessWidget {
     "Orthopedic (হাড় বিশেষজ্ঞ)",
     // "General and Laparoscopic surgery(জেনারেল সার্জারি ও ল্যাপারোস্কপিক)",
     "Nephrology (কিডনি)",
-
-    // "Gastroenterology (পরিপাকতন্ত্র)",
-    // "Hepatology (লিভার ও গলব্লাডার)",
-    // "Urology (মূত্রনালী)",
-    // "Chest Specialist (বক্ষব্যাধি)",
-
-    // "Dermatologist, Skin & VD (চর্মরোগ বিশেষজ্ঞ)",
-
-    // "Psychiatrist (মানসিক রোগ বিশেষজ্ঞ)",
-    // "Maxillofacial and Dental Surgery(মুখ ও দস্তরোগ বিশেষজ্ঞ)",
-    // "Nutritionist (পুষ্টিবিদ)"
   ];
 
   @override

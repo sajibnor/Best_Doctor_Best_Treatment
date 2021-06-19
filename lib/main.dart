@@ -1,17 +1,9 @@
-// import 'package:Best_doctor/aria_name.dart';
 import 'package:Best_doctor/secondpage.dart';
-
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-
 import './drawer.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'loginPage.dart';
-// import './registation.dart';
-// import './hospital.dart';
-//import './polash.dart';
 
 // void main() => runApp(MyApp());
 var email;

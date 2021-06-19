@@ -1,13 +1,18 @@
 import 'package:Best_doctor/ahsaniaHospital/ahsaniaHospital.dart';
+
 import 'package:flutter/material.dart';
 
-import 'department.dart';
-import 'ibnsina/ibnsina.dart';
+import './department.dart';
+import './ibnsina/ibnsina.dart';
 import './popular/popular.dart';
 import './carehospital/careHospital.dart';
 import './eam/enamhospital.dart';
 import './seba/sebahospital.dart';
 import './primehospital/primehospital.dart';
+import './crawnhospital/crawnhospital.dart';
+import './specilized_hospital/specilizedhospital.dart';
+import './dipclinic/diphospital.dart';
+import './dataNotYet.dart';
 
 class Hospital extends StatelessWidget {
   @override
@@ -52,16 +57,34 @@ class ChildrenItem extends StatelessWidget {
                       MaterialPageRoute(builder: (_) => Ahsaniahopital()));
                 } else if (index == 1) {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => DepartmeName()));
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
                 } else if (index == 2) {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => null));
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 3) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 4) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => DipClinic()));
                 } else if (index == 5) {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) => EnamHospital()));
+                } else if (index == 6) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 7) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
                 } else if (index == 8) {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) => Ibnsina()));
+                } else if (index == 9) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 10) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
                 } else if (index == 11) {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) => Popular()));
@@ -75,14 +98,17 @@ class ChildrenItem extends StatelessWidget {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) => SebaHospital()));
                 } else if (index == 15) {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => Popular()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => SavarSpecilized()));
                 } else if (index == 16) {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => Popular()));
+                      .push(MaterialPageRoute(builder: (_) => CrownHospital()));
                 } else if (index == 17) {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => Popular()));
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
+                } else if (index == 18) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MassegeShow()));
                 }
               },
               child: Center(

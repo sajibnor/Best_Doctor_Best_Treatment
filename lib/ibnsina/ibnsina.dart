@@ -1,8 +1,28 @@
 // import 'package:Best_doctor/department.dart';GlobalDept()
+import 'package:Best_doctor/eam/eameye.dart';
+import 'package:Best_doctor/eam/emaxofecial.dart';
+import 'package:Best_doctor/specialized/dibetics.dart';
+import 'package:Best_doctor/specialized/nutritionist.dart';
 import 'package:flutter/material.dart';
 // import 'ahsaniaOncology.dart';
-import './medisin.dart';
+
 import './neuroMedicine.dart';
+import './cardilogy.dart';
+import './chest.dart';
+import './child.dart';
+import './ent.dart';
+
+import './gynilogy.dart';
+
+import './nefrology.dart';
+import './ortho.dart';
+import './psycology.dart';
+import './sex.dart';
+import './urology.dart';
+import './sergary.dart';
+import './medicine.dart';
+import 'gestolyandliver.dart';
+import './hepatology.dart';
 
 class Ibnsina extends StatelessWidget {
   // var children1 = ChildrenItem();
@@ -86,7 +106,7 @@ class Ibnsina extends StatelessWidget {
           // ),
           Expanded(
               child: ListView.builder(
-                  itemCount: 18,
+                  itemCount: 19,
                   itemBuilder: (BuildContext context, int i) =>
                       ChildrenItem(i))),
         ]));
@@ -101,21 +121,21 @@ class ChildrenItem extends StatelessWidget {
     "Medicine (মেডিসিন)",
     "Neuro-Medicine Specialist (নিউরো মেডিসিন বিশেষজ্ঞ)",
     "Cardiology (হূদরোগ)",
-    "Nephrology (কিডনি)",
-    "Psychiatrist (মানসিক রোগ বিশেষজ্ঞ)",
-    "Diabetic-Thyroid and Endocrinologist (ডায়াবেটিস-থাইরয়েড ও হরমোন রোগ বিশেষজ্ঞ)",
-    "Gastroenterology (পরিপাকতন্ত্র)",
-    "Hepatology (লিভার ও গলব্লাডার)",
-    "Urology (মূত্রনালী)",
-    "Chest Specialist (বক্ষব্যাধি)",
+    "ENT (নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
     "Gynecologist (গাইনী, প্রসূতি ও বন্ধ্যত্ব রোগ বিশেষজ্ঞ)",
     "Child care specialist (শিশু বিশেষজ্ঞ)",
-    "Dermatologist, Skin & VD (চর্মরোগ বিশেষজ্ঞ)",
-    "Eye specialist (চক্ষু বিশেষজ্ঞ)",
     "Orthopedic (হাড় বিশেষজ্ঞ)",
     "General and Laparoscopic surgery(জেনারেল সার্জারি ও ল্যাপারোস্কপিক)",
-    "ENT- Eye, Ear and Throat specialist(নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
+    "Nephrology (কিডনি)",
+    "Gastroenterology (পরিপাকতন্ত্র)",
+    "Hepatology (লিভার ও গলব্লাডার)",
+    "Chest Specialist (বক্ষব্যাধি)",
+    "Diabetic-Thyroid and Endocrinologist (ডায়াবেটিস-থাইরয়েড ও হরমোন রোগ বিশেষজ্ঞ)",
+    "Dermatologist, Skin & VD (চর্মরোগ বিশেষজ্ঞ)",
+    "Eye specialist (চক্ষু বিশেষজ্ঞ)",
     "Maxillofacial and Dental Surgery(মুখ ও দস্তরোগ বিশেষজ্ঞ)",
+    'Urology (মূত্রনালী)',
+    "Psychiatrist (মানসিক রোগ বিশেষজ্ঞ)",
     "Nutritionist (পুষ্টিবিদ)"
   ];
 
@@ -136,10 +156,61 @@ class ChildrenItem extends StatelessWidget {
             onTap: () {
               if (i == 0) {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => MedicineDpt()));
+                    .push(MaterialPageRoute(builder: (_) => Medicine()));
               } else if (i == 1) {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (_) => Neuro()));
+              } else if (i == 2) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => CardiologyDpt()));
+              } else if (i == 3) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => EntDpt()));
+              } else if (i == 4) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => GynologyDpt()));
+              } else if (i == 5) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => ChildDpt()));
+              } else if (i == 6) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => OrthoDpt()));
+              } else if (i == 7) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => SergaryDpt()));
+              } else if (i == 8) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => NefrologyDpt()));
+              } else if (i == 9) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => GestoLiverDpt()));
+              } else if (i == 10) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Hepatology()));
+              } else if (i == 11) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => ChestDpt()));
+              } else if (i == 12) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Dibetics()));
+              } else if (i == 13) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => SexDpt()));
+              } else if (i == 14) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Eye()));
+              } else if (i == 15) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Mexofecial()));
+              } else if (i == 17) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => PsycologyDpt()));
+              } else if (i == 16) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => UrologyDpt()));
+              } else if (i == 18) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Nutritionist()));
               }
             },
           )),

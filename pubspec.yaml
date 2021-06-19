@@ -61,9 +61,15 @@ flutter:
     - lib/data.json
     - lalldata/
     - lalldata/care/
+    - lalldata/popular/
     - lalldata/enam/
     - lalldata/seba/
     - lalldata/savarprime/
+    - lalldata/crawn/
+    - lalldata/dipo/
+    - lalldata/ibnsina/
+    - lalldata/ahsania/
+    - lalldata/specilized/
     - lalldata/allspecialized/
     # - lalldata/ibn_medicine.json
 

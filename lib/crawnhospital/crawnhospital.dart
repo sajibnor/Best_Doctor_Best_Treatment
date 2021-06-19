@@ -1,5 +1,5 @@
 // import 'package:Best_doctor/department.dart';GlobalDept()
-import 'package:Best_doctor/popular/gestolyandliver.dart';
+
 import 'package:flutter/material.dart';
 // import 'package:valid_form/carehospital/caserjery.dart';
 import './crarthopedic.dart';
@@ -14,14 +14,14 @@ import './crsisu.dart';
 import './crvvd.dart';
 // import './neuro.dart';
 
-class Popular extends StatelessWidget {
+class CrownHospital extends StatelessWidget {
   // var children1 = ChildrenItem();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            " Popular Diagnostic Centre Ltd.",
+            "সাভার ক্রাউন হাসপাতাল এন্ড ডায়াগনস্টিক সেন্টার",
             style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,
@@ -45,19 +45,20 @@ class Popular extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("পপুলার ডায়াগনস্টিক সেন্টার লিঃ,সাভার।",
+                    Text("সাভার ক্রাউন হাসপাতাল এন্ড ডায়াগনস্টিক সেন্টার",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
                             fontFamily: "Balooda",
                             fontWeight: FontWeight.bold)),
-                    Text("ঠিকানা : ই/২২ তালবাগ আনন্দপুর সাভার ঢাকা ",
+                    Text(
+                        "ঠিকানা :এইচ-কে টাওয়ার,সি ৩৭/১,আনান্দপুর,থানা ষ্টেন,সাভার,ঢাকা",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
                             fontFamily: "Balooda",
                             fontWeight: FontWeight.bold)),
-                    Text("Contact: +8801844141715, +8801784188708",
+                    Text("Contact: +8801730-479834",
                         style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.022,
@@ -95,7 +96,7 @@ class Popular extends StatelessWidget {
           // ),
           Expanded(
               child: ListView.builder(
-                  itemCount: 13,
+                  itemCount: 10,
                   itemBuilder: (BuildContext context, int i) =>
                       ChildrenItem(i))),
         ]));

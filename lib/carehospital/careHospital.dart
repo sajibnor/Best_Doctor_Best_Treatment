@@ -112,7 +112,7 @@ class ChildrenItem extends StatelessWidget {
     "Medicine (মেডিসিন)",
     "Neuro-Medicine Specialist (নিউরো মেডিসিন বিশেষজ্ঞ)",
     "Cardiology (হূদরোগ)",
-    "ENT- Eye, Ear and Throat specialist(নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
+    "ENT (নাক, কান ও গলা রোগ বিশেষজ্ঞ)",
     "Gynecologist (গাইনী, প্রসূতি ও বন্ধ্যত্ব রোগ বিশেষজ্ঞ)",
     "Child care specialist (শিশু বিশেষজ্ঞ)",
     "Orthopedic (হাড় বিশেষজ্ঞ)",

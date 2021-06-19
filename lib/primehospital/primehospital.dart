@@ -1,5 +1,3 @@
-// import 'package:Best_doctor/department.dart';GlobalDept()
-import 'package:Best_doctor/popular/gestolyandliver.dart';
 import 'package:flutter/material.dart';
 import './parthopedics.dart';
 import './pcardiology.dart';
