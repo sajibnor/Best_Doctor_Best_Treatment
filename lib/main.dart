@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Best doctor best treatment',
+        title: 'Best doctor Best treatment',
         // home: LogInpage());
 
         home: email == null ? LogInpage() : MyHomePage());
