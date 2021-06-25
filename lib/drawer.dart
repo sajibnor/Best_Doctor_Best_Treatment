@@ -200,8 +200,9 @@ class _DrawerrState extends State<Drawerr> {
             title: Text('Log out'),
           ),
           onTap: () {
-            Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (context) => LogInpage()));
+            signOut();
+            // Navigator.pushReplacement(
+            //     context, MaterialPageRoute(builder: (context) => LogInpage()));
           },
         )
       ],
